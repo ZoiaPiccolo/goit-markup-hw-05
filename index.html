@@ -53,7 +53,11 @@
 
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="main-btn">Заказать услугу</button>
+                <button type="button" class="main-btn" data-modal-open>Заказать
+                    услугу</button>
+
+
+
             </div>
 
         </section>
@@ -112,13 +116,24 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list work-list card-set">
-                    <li class="work-item card-item"><img src="./images/netbook.jpg" alt="нетбук" width="370"
-                            height="294"></li>
-                    <li class="work-item card-item"><img src="./images/phone.jpg" alt="смартфон и ноутбук" width="370"
-                            height="294">
+                    <li class="work-item card-item">
+                        <div class="work-thumb"><img src="./images/netbook.jpg" alt="нетбук" width="370" height="294">
+                            <p class="work-descr">Десктопные приложения</p>
+                        </div>
                     </li>
-                    <li class="work-item card-item"><img src="./images/laptop.jpg" alt="лептоп" width="370"
-                            height="294"></li>
+                    <li class="work-item card-item">
+                        <div class="work-thumb"><img src="./images/phone.jpg" alt="смартфон и ноутбук" width="370"
+                                height="294">
+                            <p class="work-descr">Мобильные приложения</p>
+                        </div>
+
+                    </li>
+                    <li class="work-item card-item">
+                        <div class="work-thumb"><img src="./images/laptop.jpg" alt="лептоп" width="370" height="294">
+                            <p class="work-descr">Дизайнерские решения</p>
+                        </div>
+
+                    </li>
                 </ul>
             </div>
         </section>
@@ -337,6 +352,20 @@
         </div>
 
     </footer>
+
+
+
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close type="button" class="closebtn">
+                <svg width="18" height="18" class="icon-closebtn">
+                    <use href="./images/icons.svg#icon-closebtn"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
