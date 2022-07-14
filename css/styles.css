@@ -253,16 +253,13 @@ img {
 
 @keyframes changeBgcolor {
     0% {
-        background-color: aquamarine;
-    }
-
-    50% {
-        background-color: dodgerblue;
+        background-color: rgb(115, 112, 220);
     }
 
     100% {
-        background-color: blueviolet;
+        background-color: rgb(11, 55, 99);
     }
+
 }
 
 .feature-title {
