@@ -282,14 +282,15 @@ img {
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--set-gap));
-    margin-top: calc(-1 * var(--set-gap));
+    gap: 30px;
+    /* margin-left: calc(-1 * var(--set-gap));
+    margin-top: calc(-1 * var(--set-gap)); */
 }
 
 .card-item {
-    margin-left: var(--set-gap);
-    margin-top: var(--set-gap);
-    flex-basis: calc(100% / var(--set-item) - var(--set-gap));
+    /* margin-left: var(--set-gap);
+    margin-top: var(--set-gap); */
+    flex-basis: calc((100% -  var(--set-gap) * (var(--set-item) - 1)) / var(--set-item));
 
 }
 
